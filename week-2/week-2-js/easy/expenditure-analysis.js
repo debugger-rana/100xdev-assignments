@@ -4,17 +4,29 @@
   transactions is an array where each
   Transaction - an object like 
         {
-		id: 1,
-		timestamp: 1656076800000,
-		price: 10,
-		category: 'Food',
-		itemName: 'Pizza',
-	}
+    id: 1,
+    timestamp: 1656076800000,
+    price: 10,
+    category: 'Food',
+    itemName: 'Pizza',
+  }
   Output - [{ category: 'Food', totalSpent: 10 }] // Can have multiple categories, only one example is mentioned here
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  for (let i = 0; i < transactions.length; i++) {
+
+  }
+  return [ if (transactions.category == 'Food') {
+    var totalSpent = totalSpent + transactions.price;
+  }
+  if (transactions.category == 'Clothing') {
+    var totalSpent = totalSpent + transactions.price;
+  }
+  if (transactions.category == 'Electronics') {
+    var totalSpent = totalSpent + transactions.price;
+  }
+  ];
 }
 
 module.exports = calculateTotalSpentByCategory;
